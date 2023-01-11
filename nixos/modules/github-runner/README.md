@@ -1,0 +1,3 @@
+
+- **description:** a NixOS module to replace the [github-runner](https://github.com/NixOS/nixpkgs/blob/nixos-22.11/nixos/modules/services/continuous-integration/github-runner.nix) and [github-runners](https://github.com/NixOS/nixpkgs/blob/nixos-22.11/nixos/modules/services/continuous-integration/github-runners.nix) modules with a single `services.github-runner` module that runs as a dedicated (non `DynamicUser`) user with less `systemd` hardening
+- **motivation:** the NixOS module is hardened and a good choice for most users who don't require any overly specialized systems integration - this module is a good choice if you do require such systems integration
